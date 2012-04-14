@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jvmDebug" default="jar">
+	<description>
+    	jvmDebug
+    </description>
+
+	<path id="asm" location="c:\deve\asm-3.1\lib\all\asm-all-3.1.jar">
+	</path>
+
+	<target name="hudson" description="hudson-target">
+		<antcall target="clean" />
+		<antcall target="compile" />
+		<antcall target="jar" />
+		<antcall target="javadoc" />
+	</target>
+
+	<target name="javadoc">
+		<mkdir dir="javadoc" />
+		<javadoc destdir="javadoc">
+			<fileset dir="src">
+				<include name="**/*.java" />
+			</fileset>
+		</javadoc>
+	</target>
+
+	<target name="clean">
+		<delete dir="bin" />
+	</target>
+
+	<target name="compile">
+		<mkdir dir="bin" />
+		<javac destdir="bin" srcdir="src">
+			<classpath refid="asm" />
+		</javac>
+	</target>
+
+	<!-- ================================= 
+          target: default              
+         ================================= -->
+	<target name="jar" description="jar">
+		<jar destfile="jvmDebug-bci.jar" manifest="manifest.mf">
+			<fileset dir="bin">
+				<include name="**/*" />
+			</fileset>
+		</jar>
+	</target>
+
+</project>

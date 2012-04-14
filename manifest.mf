@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Premain-Class: dev.java.net.jvmDebug.Premain
+Boot-Class-Path: asm-all-3.1.jar
+
