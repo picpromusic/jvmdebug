@@ -1,0 +1,139 @@
+// class version 50.0 (50)
+// access flags 33
+public class Simple2 {
+
+  // compiled from: Simple.asm
+
+  // access flags 1
+  public <init>()V
+   L0
+    LINENUMBER 8 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+    RETURN
+   L1
+    LOCALVARIABLE this LSimple; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 9
+  public static get()I
+   L0
+    LINENUMBER 20 L0
+    NEW incubator/jvmsimu/JVMThread
+    DUP
+    NEW incubator/jvmsimu/JVM
+    DUP
+    INVOKESPECIAL incubator/jvmsimu/JVM.<init> ()V
+    NEW incubator/jvmsimu/JVMStack
+    DUP
+    INVOKESPECIAL incubator/jvmsimu/JVMStack.<init> ()V
+    INVOKESPECIAL incubator/jvmsimu/JVMThread.<init> (Lincubator/jvmsimu/JVM;Lincubator/jvmsimu/JVMStack;)V
+    ASTORE 2
+    LDC 21
+    ISTORE 0
+    LDC "L0"
+    ASTORE 1
+   L1
+    LINENUMBER 21 L1
+    LDC 22
+    ISTORE 0
+    LDC "LINENUMBER 11 L0"
+    ASTORE 1
+   L2
+    LINENUMBER 22 L2
+    LDC 23
+    ISTORE 0
+    LDC "ICONST_5"
+    ASTORE 1
+   L3
+    LINENUMBER 23 L3
+    ALOAD 2
+    NEW org/objectweb/asm/tree/InsnNode
+    DUP
+    LDC 8
+    INVOKESPECIAL org/objectweb/asm/tree/InsnNode.<init> (I)V
+    ACONST_NULL
+    INVOKEVIRTUAL incubator/jvmsimu/JVMThread.process (Lorg/objectweb/asm/tree/AbstractInsnNode;[Ljava/lang/Object;)[Ljava/lang/Object;
+    POP
+    LDC 24
+    ISTORE 0
+    LDC "ISTORE"
+    ASTORE 1
+   L4
+    LINENUMBER 24 L4
+    ALOAD 2
+    NEW org/objectweb/asm/tree/InsnNode
+    DUP
+    LDC 54
+    LDC 3
+    INVOKESPECIAL org/objectweb/asm/tree/VarInsnNode.<init> (II)V
+    ACONST_NULL
+    INVOKEVIRTUAL incubator/jvmsimu/JVMThread.process (Lorg/objectweb/asm/tree/AbstractInsnNode;[Ljava/lang/Object;)[Ljava/lang/Object;
+    ICONST_0
+    AALOAD
+    CHECKCAST java/lang/Integer
+    INVOKEVIRTUAL java/lang/Integer.intValue ()I
+    ISTORE 3
+    LDC 25
+    ISTORE 0
+    LDC "L1"
+    ASTORE 1
+   L5
+    LINENUMBER 25 L5
+    LDC 26
+    ISTORE 0
+    LDC "LINENUMBER 12 L1"
+    ASTORE 1
+   L6
+    LINENUMBER 26 L6
+    LDC 27
+    ISTORE 0
+    LDC "ILOAD"
+    ASTORE 1
+   L7
+    LINENUMBER 27 L7
+    ALOAD 2
+    NEW org/objectweb/asm/tree/InsnNode
+    DUP
+    LDC 21
+    LDC 3
+    INVOKESPECIAL org/objectweb/asm/tree/VarInsnNode.<init> (II)V
+    ICONST_1
+    ANEWARRAY java/lang/Object
+    ICONST_0
+    ILOAD 3
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    AASTORE
+    INVOKEVIRTUAL incubator/jvmsimu/JVMThread.process (Lorg/objectweb/asm/tree/AbstractInsnNode;[Ljava/lang/Object;)[Ljava/lang/Object;
+    POP
+    LDC 28
+    ISTORE 0
+    LDC "IRETURN"
+    ASTORE 1
+   L8
+    LINENUMBER 28 L8
+    ALOAD 2
+    NEW org/objectweb/asm/tree/InsnNode
+    DUP
+    LDC 172
+    INVOKESPECIAL org/objectweb/asm/tree/InsnNode.<init> (I)V
+    ACONST_NULL
+    INVOKEVIRTUAL incubator/jvmsimu/JVMThread.process (Lorg/objectweb/asm/tree/AbstractInsnNode;[Ljava/lang/Object;)[Ljava/lang/Object;
+    ICONST_0
+    AALOAD
+    CHECKCAST java/lang/Integer
+    INVOKEVIRTUAL java/lang/Integer.intValue ()I
+    IRETURN
+    LDC 29
+    ISTORE 0
+    LDC "L2"
+    ASTORE 1
+   L9
+    LOCALVARIABLE lineNumber I L0 L9 0
+    LOCALVARIABLE $_content_$ Ljava/lang/String; L0 L9 1
+    LOCALVARIABLE $_context_$ Lincubator/jvmsimu/JVMThread; L0 L9 2
+    LOCALVARIABLE temp I L0 L9 3
+    MAXSTACK = 11
+    MAXLOCALS = 4
+}

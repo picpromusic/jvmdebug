@@ -1,0 +1,121 @@
+// class version 50.0 (50)
+// access flags 16433
+// signature Ljava/lang/Enum<LTestEnum;>;
+// declaration: TestEnum extends java.lang.Enum<TestEnum>
+public final enum TestEnum extends java/lang/Enum  {
+
+  // compiled from: TestEnum.java
+
+  // access flags 16409
+  public final static enum LTestEnum; A
+
+  // access flags 16409
+  public final static enum LTestEnum; B
+
+  // access flags 4122
+  private final static [LTestEnum; ENUM$VALUES
+
+  // access flags 8
+  static <clinit>()V
+   L0
+    LINENUMBER 2 L0
+    NEW TestEnum
+    DUP
+    LDC "A"
+    ICONST_0
+    INVOKESPECIAL TestEnum.<init> (Ljava/lang/String;I)V
+    PUTSTATIC TestEnum.A : LTestEnum;
+    NEW TestEnum
+    DUP
+    LDC "B"
+    ICONST_1
+    INVOKESPECIAL TestEnum.<init> (Ljava/lang/String;I)V
+    PUTSTATIC TestEnum.B : LTestEnum;
+   L1
+    LINENUMBER 1 L1
+    ICONST_2
+    ANEWARRAY TestEnum
+    DUP
+    ICONST_0
+    GETSTATIC TestEnum.A : LTestEnum;
+    AASTORE
+    DUP
+    ICONST_1
+    GETSTATIC TestEnum.B : LTestEnum;
+    AASTORE
+    PUTSTATIC TestEnum.ENUM$VALUES : [LTestEnum;
+    RETURN
+    MAXSTACK = 4
+    MAXLOCALS = 0
+
+  // access flags 2
+  private <init>(Ljava/lang/String;I)V
+   L0
+    LINENUMBER 1 L0
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    INVOKESPECIAL java/lang/Enum.<init> (Ljava/lang/String;I)V
+    RETURN
+   L1
+    LOCALVARIABLE this LTestEnum; L0 L1 0
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 1
+  public getName()Ljava/lang/String;
+   L0
+    LINENUMBER 5 L0
+   FRAME FULL [TestEnum] []
+    ALOAD 0
+    GETSTATIC TestEnum.A : LTestEnum;
+    IF_ACMPNE L1
+   L2
+    LINENUMBER 6 L2
+    LDC "Huch"
+    ARETURN
+   L1
+    LINENUMBER 8 L1
+   FRAME FULL [TestEnum] []
+    LDC "Haha"
+    ARETURN
+   L3
+    LOCALVARIABLE this LTestEnum; L0 L3 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 9
+  public static values()[LTestEnum;
+   L0
+    LINENUMBER 1 L0
+    GETSTATIC TestEnum.ENUM$VALUES : [LTestEnum;
+    DUP
+    ASTORE 0
+    ICONST_0
+    ALOAD 0
+    ARRAYLENGTH
+    DUP
+    ISTORE 1
+    ANEWARRAY TestEnum
+    DUP
+    ASTORE 2
+    ICONST_0
+    ILOAD 1
+    INVOKESTATIC java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
+    ALOAD 2
+    ARETURN
+    MAXSTACK = 5
+    MAXLOCALS = 3
+
+  // access flags 9
+  public static valueOf(Ljava/lang/String;)LTestEnum;
+   L0
+    LINENUMBER 1 L0
+    LDC LTestEnum;.class
+    ALOAD 0
+    INVOKESTATIC java/lang/Enum.valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    CHECKCAST TestEnum
+    ARETURN
+    MAXSTACK = 2
+    MAXLOCALS = 1
+}
